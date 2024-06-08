@@ -1,11 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Table from "../Table/Table";
 import useTable from "../../hooks/use-table";
 import TableFooter from "../Table/TableFooter";
 import classes from "./Items.module.css";
+
 const Items = ({ onDataChanged, columns, items }) => {
-  const [rowsPerPage, setRowsPerPage] = useState("5");
   const [page, setPage] = useState(1);
+  const [rowsPerPage, setRowsPerPage] = useState(
+    localStorage.getItem("rowsPerPage") || "5"
+  );
+
+  useEffect(() => {
+    localStorage.setItem("rowsPerPage", rowsPerPage);
+  }, [rowsPerPage]);
+
   const { slice, range } = useTable(items, page, rowsPerPage);
 
   const handlePageSizeChange = (e) => {
