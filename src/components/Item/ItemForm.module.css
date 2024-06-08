@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  background: var(--body_background);
+  margin: auto 1rem;
+  overflow: auto;
+  box-shadow: 1px 1px 10px 1px var(--button-box-shadow); /* Add a slight box shadow */
+}

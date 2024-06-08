@@ -1,0 +1,35 @@
+.table {
+  background-color: var(--table_background);
+  width: 100%;
+  overflow-x: auto;
+  margin: 1rem auto 2rem auto;
+  border-radius: 12px;
+}
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table thead tr {
+  border-bottom: 3px solid var(--body_background);
+  text-align: left;
+}
+.table td {
+  padding: 10px;
+  border-bottom: 3px solid var(--body_background);
+}
+.table tbody tr:hover {
+  background: var(--table-background-hover);
+}
+.table th,
+.table td {
+  text-align: center;
+  width: fit-content;
+  overflow: auto;
+}
+
+.table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 30px 0;
+}

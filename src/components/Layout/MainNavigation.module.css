@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  height: 5rem;
+  background-color: var(--body_background);
+  box-shadow: var(--nav-shadow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10%;
+}
+
+.logoLink {
+  text-decoration: none; /* Remove underline from the link */
+}
+
+.logo {
+  color: var(--body_color);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}

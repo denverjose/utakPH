@@ -1,0 +1,21 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 450px;
+  border-radius: 8px;
+  padding: 30px;
+  text-align: center;
+  background: var(--body_background);
+  margin: auto 1rem;
+  overflow: auto;
+  box-shadow: 1px 1px 10px 1px var(--button-box-shadow);
+}
+.form span{
+    margin-bottom: 1rem;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content:space-evenly;
+}
